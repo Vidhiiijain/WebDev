@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vidhi Jain's Website</title>
+    
+    <style>
+        body {
+        font-family: 'Georgia', sans-serif;
+        background: url("bg.jpg") no-repeat center center fixed;
+        background-size: cover;
+        margin: 0;
+       }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color:white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px blue;
+        }
+
+        section {
+            margin: 40px 0;
+        }
+
+        h1, h2 {
+            color: black;
+            text-align: center;
+        }
+
+        form {
+            display: grid;
+            gap: 15px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color:blue;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: green;
+        }
+
+        .image-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        figure {
+            flex: 1 1 calc(50% - 10px); /* 50% for two columns with a 10px gap */
+            margin: 0;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        figcaption {
+            text-align: center;
+            margin-top: 5px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: green;
+            color: white;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 5px;
+            background-color: light blue;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+
+    <section id="introduction" style="padding: 50px; text-align: center;">
+      <h1 style="color: black; font-family: 'Blackadder ITC', sans-serif; font-size: 50px;">Welcome to My Website</h1>
+      <div style="background-color: black; padding: 15px; border-radius: 8px; margin: 20px 0;">
+        <p style="font-size: 18px; color: white; font-family: 'Georgia', sans-serif;">I am Vidhi Jain, a second-year undergraduate in <em>Electrical Engineering</em> at Indian Institute of Technology, Kanpur.</p>
+      </div>
+      <p style="font-size: 18px; color: black; font-family: 'Arial', sans-serif; font-style: italic;">This is my first website, which covers the following 3 sections- form, image gallery, and my 3rd semester's time table.</p>
+    </section>
+
+    <section id="form">
+        <div class="container">
+            <h2>Form</h2>
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="Department">Department:</label>
+                <input type="text" id="Department" name="Department" required>
+
+                <label for="LinkedIn">LinkedIn:</label>
+                <input type="text" id="LinkedIn" name="LinkedIn" required>
+
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="image-gallery">
+      <div class="container">
+          <h2>Image Gallery</h2>
+          <div class="image-row">
+              <figure>
+                  <img src="WebDev.jpg" alt="webdev image">
+                  <figcaption>Crafting interactive and user-friendly websites and applications.
+                    <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fjavascript.plainenglish.io%2F10-best-web-development-software-for-web-developer-4d349f486d2a&psig=AOvVaw1gXgIQisOYoXwxlyiVLfvz&ust=1702719724179000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCJDfmbWTkYMDFQAAAAAdAAAAABAD" target="_blank">(Image Source)</a>
+                  </figcaption>
+              </figure>
+              
+              <figure>
+                  <img src="ML.jpeg" alt="ML image">
+                  <figcaption>Teaching computers to learn and make decisions from data.
+                    <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.fsm.ac.in%2Fblog%2Fan-introduction-to-machine-learning-its-importance-types-and-applications%2F&psig=AOvVaw1eH1G8-VlxzpWOyFaeVKlb&ust=1702719778752000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCPDJidWTkYMDFQAAAAAdAAAAABAD" target="_blank">(Image Source)</a>
+                  </figcaption>
+              </figure>
+              
+              <figure>
+                  <img src="DS.jpeg" alt="DS image">
+                  <figcaption>Unlocking insights from data to drive informed decisions.
+                    <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fiimk.emeritus.org%2Fiimk-advanced-data-science-for-managers%2Findex.php&psig=AOvVaw1HqynKkEUDVednATT0NoNd&ust=1702719815878000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCJj6kOOTkYMDFQAAAAAdAAAAABAD" target="_blank">(Image Source)</a>
+                  </figcaption>
+              </figure>
+              
+              <figure>
+                  <img src="Cp.jpg" alt="Cp image">
+                  <figcaption>Sharpening coding skills through algorithmic challenges.
+                    <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Flevelup.gitconnected.com%2Fa-beginners-guide-into-competitive-programming-a63e49b38f69&psig=AOvVaw3j1TcrUCuhRgJzYUwJAAJc&ust=1702719837640000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCOj0-eyTkYMDFQAAAAAdAAAAABAD" target="_blank">(Image Source)</a>
+                  </figcaption>
+              </figure>
+              
+              <figure>
+                  <img src="AI.jpeg" alt="AI image">
+                  <figcaption>Creating smart systems that mimic human intelligence.
+                    <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Feast.vc%2Finsights%2Fartificial-intelligence-in-indonesia-the-current-state-and-its-opportunities%2F&psig=AOvVaw3214E-sdIqVidqrJXymN-q&ust=1702719856388000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCKiiuPaTkYMDFQAAAAAdAAAAABAD" target="_blank">(Image Source)</a>
+                  </figcaption>
+              </figure>
+              <figure>
+                <img src="robotics.png" alt="robotics image">
+                <figcaption>Building intelligent machines and pushing the boundaries of automation.
+                  <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fshooliniuniversity.com%2Fblog%2Fbtech-mechanical-robotics-ai-scope-opportunities-career-in-india%2F&psig=AOvVaw20q8g1CwZZgmtGdxKj-noU&ust=1702718496311000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCOii7uyOkYMDFQAAAAAdAAAAABAO" target="_blank">(Image Source)</a>
+                </figcaption>
+            </figure>
+          </div>
+      </div>
+    </section>
+  
+
+
+    <section id="timetable">
+        <div class="container">
+            <h2>Course Timetable (Third Semester)</h2>
+            <table>
+              <tr>
+                <th>Time</th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+            </tr>
+            <tr>
+                <td>8:00 AM - 9:00 AM</td>
+                <td>ESC201</td>
+                <td>ESC201</td>
+                <td>ESC201</td>
+                <td>ESC201</td>
+                <td>ESC201</td>
+            </tr>
+            <tr>
+                <td>9:00 AM - 10:00 AM</td>
+                <td>MSO202</td>
+                <td>MSO202</td>
+                <td>MSO202</td>
+                <td>MSO202</td>
+                <td>MSO202</td>
+            </tr>
+            <tr>
+                <td>11:00 AM - 12:00 PM</td>
+                <td>EE200</td>
+                <td>EE200</td>
+                <td>EE200</td>
+                <td>EE200</td>
+                <td>EE200</td>
+            </tr>
+            <tr>
+              <td>02:00 PM - 05:00 PM</td>
+              <td>ESC201 lab</td>
+              <td>-</td>
+              <td>-</td>
+              <td>TA212</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td>06:00 PM - 07:00 PM</td>
+              <td>ENG124</td>
+              <td>ENG124</td>
+              <td>ENG124</td>
+              <td>ENG124</td>
+              <td>ENG124</td>
+            </tr>
+            </table>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Vidhi Jain</p>
+    </footer>
+
+  </body>
+</html>
